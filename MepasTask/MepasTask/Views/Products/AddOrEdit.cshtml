@@ -1,0 +1,95 @@
+﻿@using MepasTask.Models
+@model ProductsModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <form asp-action="AddOrEdit" asp-route-id="@Model.id"
+              data-ajax="true" data-ajax-method="POST" data-ajax-begin="OnBegin" data-ajax-failure="OnFailure"
+              data-ajax-success="OnSuccess" data-ajax-complete="OnComplete">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="id" />
+            <input type="hidden" asp-for="category_id" />
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label asp-for="name" class="control-label"></label>
+                        <input asp-for="name" class="form-control" required />
+                        <span asp-validation-for="name" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label asp-for="price" class="control-label"></label>
+                        <input asp-for="price" class="form-control" required />
+                        <span asp-validation-for="price" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="unit" class="control-label"></label>
+                        <input asp-for="unit" class="form-control " />
+                        <span asp-validation-for="unit" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                    <label asp-for="stock" class="control-label"></label>
+                    <input asp-for="stock" class="form-control " />
+                    <span asp-validation-for="stock" class="text-danger"></span>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                     <div class="form-group">
+                        <label asp-for="weight" class="control-label"></label>
+                        <input asp-for="weight" class="form-control " />
+                        <span asp-validation-for="weight" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label asp-for="color" class="control-label"></label>
+                        <input asp-for="color" class="form-control" />
+                        <span asp-validation-for="color" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label asp-for="heigth" class="control-label"></label>
+                            <input asp-for="heigth" class="form-control " />
+                            <span asp-validation-for="heigth" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label asp-for="width" class="control-label"></label>
+                            <input asp-for="width" class="form-control " />
+                            <span asp-validation-for="width" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="card-footer" style="display: block;">
+                <div class="hstack gap-2 justify-content-end">
+                    <button type="button" class="btn btn-light mt-3" data-bs-dismiss="modal">Kapat</button>
+                    <input type="submit" value="Kaydet" class="btn btn-success mt-3" />
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

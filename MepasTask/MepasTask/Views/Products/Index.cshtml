@@ -1,0 +1,164 @@
+﻿@model IEnumerable<MepasTask.Models.ProductsModel>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<div>
+    <div class="mb-3">
+        <button class="btn btn-primary" id="Ekle">Yeni Kayıt Ekle</button>
+    </div>
+
+    <table>
+            <tr>
+                <th style="width:5%;">#</th>
+                <th>id</th>
+                <th>name</th>
+                <th>category_id</th>
+                <th>price</th>
+                <th>unit</th>
+                <th>stock</th>
+                <th>color</th>
+                <th>weight</th>
+                <th>width</th>
+                <th>heigth</th>
+                <th>added_user_id</th>
+                <th>updated_user_id</th>
+            <th>created_date</th>
+                <th>updated_date</th>
+                <th>İşlem</th>
+            </tr>
+        @*<tbody>*@
+            @{
+                int syc = 0;
+            }
+            @if (Model != null)
+            {
+                if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @{
+                                    int s = syc + 1;
+                                } @s
+                            </td>
+                            <td>@item.id</td>
+                            <td>@item.name</td>
+                            <td>@item.category_id</td>
+                            <td>@item.price</td>
+                            <td>@item.unit</td>
+                            <td>@item.stock</td>
+                            <td>@item.color</td>
+                            <td>@item.weight</td>
+                            <td>@item.width</td>
+                            <td>@item.heigth</td>
+                            <td>@item.added_user_id</td>
+                            <td>@item.updated_user_id</td>
+                            <td>@item.created_date</td>
+                            <td>@item.updated_date</td>
+                            <td>
+                                <div class="row">
+                            <div class="col">
+                                <button class="btn btn-success" id="Guncelle" data-id="@item.id">Güncelle</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-danger" id="Sil" data-id="@item.id">Sil</button>
+                            </div>
+                            </div>
+                            </td>
+                        </tr>
+                        syc++;
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="9">
+                                <h5 class="mt-2">Üzgünüm! Hiç Kayıt Bulunamadı</h5>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="9">
+                            <h5 class="mt-2">Üzgünüm! Hiç Kayıt Bulunamadı</h5>
+                    </td>
+                </tr>
+            }
+       @* </tbody>*@
+    </table>
+</div> 
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    //jQuery(document).ready(function ($) {
+    //    $('#Guncelle').click(function () {
+    //        var id = $(this).data('id');
+    //        window.location.href = "/Products/AddOrEdit?id=" + id;
+    //    });
+    //    $('#Ekle').click(function () {
+    //        window.location.href = "/Products/AddOrEdit";
+    //    });
+    //});
+    $(document).ready(function () {
+        $('#Guncelle').click(function () {
+            var id = $(this).data('id');
+            window.location.href = "/Products/AddOrEdit?id=" + id;
+        });
+    });
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        $('#Sil').click(function () {
+            var id = $(this).data('id');
+
+            // SweetAlert2 ile onay kutusu 
+            Swal.fire({
+                title: 'Emin misiniz?',
+                text: "Bu öğeyi silmek istediğinizden emin misiniz?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Evet, Sil',
+                cancelButtonText: 'İptal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Kullanıcı "Evet" dediğinde silme işlemini başlat
+                    window.location.href = "/Products/Delete?id=" + id;
+                }
+                else{
+                    // Kullanıcı "İptal" dediğinde uyarı göster
+                    Swal.fire('Silme işlemi iptal edildi.', '', 'info');
+                }
+            });
+        });
+    });
+</script>

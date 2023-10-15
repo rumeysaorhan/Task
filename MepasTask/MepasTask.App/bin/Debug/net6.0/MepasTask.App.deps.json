@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MepasTask.App/1.0.0": {
+        "dependencies": {
+          "MepasTask.Model": "1.0.0"
+        },
+        "runtime": {
+          "MepasTask.App.dll": {}
+        }
+      },
+      "MepasTask.Model/1.0.0": {
+        "runtime": {
+          "MepasTask.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MepasTask.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MepasTask.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+D:\MepasTask\MepasTask.Model\bin\Debug\net6.0\MepasTask.Model.deps.json
+D:\MepasTask\MepasTask.Model\bin\Debug\net6.0\MepasTask.Model.dll
+D:\MepasTask\MepasTask.Model\bin\Debug\net6.0\MepasTask.Model.pdb
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.csproj.AssemblyReference.cache
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.AssemblyInfoInputs.cache
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.AssemblyInfo.cs
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.csproj.CoreCompileInputs.cache
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.dll
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\refint\MepasTask.Model.dll
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\MepasTask.Model.pdb
+D:\MepasTask\MepasTask.Model\obj\Debug\net6.0\ref\MepasTask.Model.dll

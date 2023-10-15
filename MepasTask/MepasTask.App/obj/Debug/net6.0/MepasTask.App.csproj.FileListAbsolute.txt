@@ -1,0 +1,15 @@
+D:\MepasTask\MepasTask.App\bin\Debug\net6.0\MepasTask.App.deps.json
+D:\MepasTask\MepasTask.App\bin\Debug\net6.0\MepasTask.App.dll
+D:\MepasTask\MepasTask.App\bin\Debug\net6.0\MepasTask.App.pdb
+D:\MepasTask\MepasTask.App\bin\Debug\net6.0\MepasTask.Model.dll
+D:\MepasTask\MepasTask.App\bin\Debug\net6.0\MepasTask.Model.pdb
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.csproj.AssemblyReference.cache
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.GeneratedMSBuildEditorConfig.editorconfig
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.AssemblyInfoInputs.cache
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.AssemblyInfo.cs
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.csproj.CoreCompileInputs.cache
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.csproj.CopyComplete
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.dll
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\refint\MepasTask.App.dll
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\MepasTask.App.pdb
+D:\MepasTask\MepasTask.App\obj\Debug\net6.0\ref\MepasTask.App.dll

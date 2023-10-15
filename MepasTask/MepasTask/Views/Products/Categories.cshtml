@@ -1,0 +1,108 @@
+﻿@model IEnumerable<MepasTask.Models.ProductsModel>
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<div>
+    <table>
+        <tr>
+            <th style="width:5%;">#</th>
+            <th>id</th>
+            <th>name</th>
+            <th>category_id</th>
+            <th>price</th>
+            <th>unit</th>
+            <th>stock</th>
+            <th>color</th>
+            <th>weight</th>
+            <th>width</th>
+            <th>heigth</th>
+            <th>added_user_id</th>
+            <th>updated_user_id</th>
+            <th>created_date</th>
+            <th>updated_date</th>
+        </tr>
+        <tbody>
+        @{
+            int syc = 0;
+        }
+        @if (Model != null)
+        {
+            if (Model.Count() > 0)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @{
+                                int s = syc + 1;
+                            } @s
+                        </td>
+                        <td>@item.id</td>
+                        <td>@item.name</td>
+                        <td>@item.category_id</td>
+                        <td>@item.price</td>
+                        <td>@item.unit</td>
+                        <td>@item.stock</td>
+                        <td>@item.color</td>
+                        <td>@item.weight</td>
+                        <td>@item.width</td>
+                        <td>@item.heigth</td>
+                        <td>@item.added_user_id</td>
+                        <td>@item.updated_user_id</td>
+                        <td>@item.created_date</td>
+                            <td>@item.updated_date</td>
+@*                        <td>@(item.updated_date == null ? "" : item.updated_date.Value.ToShortDateString())</td>
+*@                        <td>
+                            @* <div class="hstack gap-3 fs-15">
+                <a href="javascript:showInPopup('@Url.Action("AddOrEdit","BildirimSablon",new {id=item.id},Context.Request.Scheme)','Bildirim Şablon Güncelle','default')"
+                class="link-primary" title="Güncelle"><i class="ri-edit-fill"></i></a>
+                <a href="javascript:DeleteRecord('@Url.Action("Delete","BildirimSablon",new {id=item.id})')"
+                title="Sil" class="link-danger"> <i class="ri-delete-bin-5-fill align-bottom "></i></a>
+                </div>*@
+                        </td>
+                    </tr>
+                    syc++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="15">
+                        <h5 class="mt-2">Üzgünüm! Hiç Kayıt Bulunamadı</h5>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="15">
+                    <h5 class="mt-2">Üzgünüm! Hiç Kayıt Bulunamadı</h5>
+                </td>
+            </tr>
+        }
+         </tbody>
+    </table>
+</div>
+
+
+

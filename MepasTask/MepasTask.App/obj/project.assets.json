@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "MepasTask.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/MepasTask.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MepasTask.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MepasTask.Model/1.0.0": {
+      "type": "project",
+      "path": "../MepasTask.Model/MepasTask.Model.csproj",
+      "msbuildProject": "../MepasTask.Model/MepasTask.Model.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "MepasTask.Model >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\fatma\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\MepasTask\\MepasTask.App\\MepasTask.App.csproj",
+      "projectName": "MepasTask.App",
+      "projectPath": "D:\\MepasTask\\MepasTask.App\\MepasTask.App.csproj",
+      "packagesPath": "C:\\Users\\fatma\\.nuget\\packages\\",
+      "outputPath": "D:\\MepasTask\\MepasTask.App\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\fatma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\MepasTask\\MepasTask.Model\\MepasTask.Model.csproj": {
+              "projectPath": "D:\\MepasTask\\MepasTask.Model\\MepasTask.Model.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

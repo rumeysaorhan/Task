@@ -1,0 +1,17 @@
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.Infrastructure.deps.json
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.Infrastructure.dll
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.Infrastructure.pdb
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.App.dll
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.Model.dll
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.App.pdb
+D:\MepasTask\MepasTask.Infrastructure\bin\Debug\net6.0\MepasTask.Model.pdb
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.csproj.AssemblyReference.cache
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.AssemblyInfoInputs.cache
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.AssemblyInfo.cs
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.csproj.CoreCompileInputs.cache
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.csproj.CopyComplete
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.dll
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\refint\MepasTask.Infrastructure.dll
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\MepasTask.Infrastructure.pdb
+D:\MepasTask\MepasTask.Infrastructure\obj\Debug\net6.0\ref\MepasTask.Infrastructure.dll
